@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int n,d,s=0,t;
+    scanf("%d",&n);
+    t=n;
+    while(n>0)
+    {
+        d=n%10;
+        n=n/10;
+        s=s+d*d*d;
+    }
+    if(s==t)
+        printf("armstrong numbere");
+        else
+        printf("not an armstrong");
+    return 0;
+}
