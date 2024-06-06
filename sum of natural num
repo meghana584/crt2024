@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int a=1,n,s=0;
+    scanf("%d",&n);
+    while(a<=n)
+    {
+        s=s+a;
+        a=a+1;
+    }
+    // Write C code here
+    printf("%d\n",s);
+
+    return 0;
+}
