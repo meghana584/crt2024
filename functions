@@ -1,0 +1,12 @@
+#include <stdio.h>
+void show()
+{
+    printf("\n vignan\n");
+    printf(" \n hyd \n");
+}
+int main() {
+    // Write C code here
+    show();
+
+    return 0;
+}
