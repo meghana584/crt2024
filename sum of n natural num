@@ -1,0 +1,17 @@
+#include <stdio.h>
+int add(int n)
+{
+    if(n==0)
+    return 0;
+    else
+    return n+add(n-1);
+}
+int main() {
+    // Write C code here
+    int n;
+    scanf("%d",&n);
+    int r=add(n);
+    printf("%d",r);
+
+    return 0;
+}
