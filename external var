@@ -1,0 +1,15 @@
+#include<stdio.h>
+void increment();
+int a=6;
+int main()
+{
+    printf("%d\t",a);
+    increment();
+    increment();
+}
+void increment()
+{
+    a++;
+    printf("%d\t",a);
+    
+}
