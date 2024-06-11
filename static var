@@ -1,0 +1,15 @@
+#include <stdio.h>
+void increment()
+{
+    static int a=1;
+    printf("%d\n",a);
+    a++;
+}
+int main() {
+    // Write C code here
+increment();
+increment();
+increment();
+
+    return 0;
+}
