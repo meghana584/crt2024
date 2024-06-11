@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void find_distance_within_range(int num, int start, int end, int distances[]) {
+    for (int i = 0; i < num; i++) {
+        if (distances[i] >= start && distances[i] <= end) {
+            printf("%d ", distances[i]);
+        }
+    }
+    printf("\n");
+}
+
+int main() {
+    int num, start, end;
+    
+    scanf("%d %d %d", &num, &start, &end);
+    
+    int *distances = (int *)malloc(num * sizeof(int));
+    
+    
+    for (int i = 0; i < num; i++) {
+        scanf("%d", &distances[i]);
+    }
+
+    
+    find_distance_within_range(num, start, end, distances);
+
+    free(distances); 
+    return 0;
+}
+
