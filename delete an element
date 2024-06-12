@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    int a[n],pos,i;
+    for(i=0;i<n;i++)
+    {
+        scanf("%d ",&a[i]);
+    }
+    scanf("%d ",&pos);
+    if(pos>n)
+    {
+        printf("invalid input");
+    }
+    for(i=pos-1;i<n;i++)
+    {
+        a[i]=a[i+1];
+        printf("%d",a[i]);
+    
+    }
+    
+    // Write C code here
+    //printf("Try programiz.pro");
+
+    return 0;
+}
