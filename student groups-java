@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int p=sc.nextInt();
+        int a=p/4;
+        if(p>=100 && p<=200)
+        {
+            System.out.println(a+"\n"+a+"\n"+a+"\n"+(a+p%4));
+        }
+        else 
+        {
+            System.out.println("INVALID INPUT");
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
