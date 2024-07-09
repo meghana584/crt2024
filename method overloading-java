@@ -1,0 +1,22 @@
+class Test
+{
+void add(int a,int b)
+{
+System.out.println("two in argument method");
+}
+void add(int a,int b,int c)
+{
+System.out.println("three int argument method");
+}
+void add(double a, double b)
+{
+System.out.println("two int argument method");
+}
+public static void main(String []args)
+{
+Test t1=new Test();
+t1.add(12,53,55);
+t1.add(23.5,56.8);
+t1.add(78,22);
+}
+}
